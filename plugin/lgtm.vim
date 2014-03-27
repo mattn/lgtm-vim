@@ -10,7 +10,7 @@ function! s:lgtm()
   let line = getline('.')
   let indent = matchstr(line, '^\s\+')
   let content = join(map(split(content, "\n"), 'indent . v:val'))
-  if line =~ '^\s\+$'
+  if line =~ '^\s*$'
     call setline('.', content)
   else
     put! =content
