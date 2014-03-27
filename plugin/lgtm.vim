@@ -2,6 +2,7 @@ function! s:lgtm()
   let res = webapi#http#get("http://www.lgtm.in/g", {}, {"Accept": "application/json"})
   if &ft == 'markdown'
     let content = webapi#json#decode(res.content)['markdown']
+    let content = '![LGTM](' . webapi#json#decode(res.content)['imageUrl'] . ')'
   elseif &ft == 'html'
     let content = '<img src="' . webapi#json#decode(res.content)['imageUrl'] . '" alt="LGTM">'
   else
@@ -11,7 +12,7 @@ function! s:lgtm()
   let indent = matchstr(line, '^\s\+')
   let content = join(map(split(content, "\n"), 'indent . v:val'))
   if line =~ '^\s*$'
-    call setline('.', content)
+    call setline('.', split(content, "\n"))
   else
     put! =content
   endif
