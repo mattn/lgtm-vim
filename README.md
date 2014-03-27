@@ -2,7 +2,7 @@
 
 LGTM :+1:
 
-[![LGTM](http://www.lgtm.in/p/Ff42)](http://www.lgtm.in/i/Ff42)  [:+1:](http://www.lgtm.in/u/Ff42) [:-1:](http://www.lgtm.in/r/Ff42)
+![LGTM](http://cdn.memegenerator.net/instances/400x/24707717.jpg)](http://cdn.memegenerator.net/instances/400x/24707717.jpg)
 
 ## Usage
 
