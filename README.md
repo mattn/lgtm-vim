@@ -6,7 +6,7 @@ LGTM :+1:
 
 ## Usage
 
-Type `<leader>lgtm`
+Type `<leader>lgtm` or `:LGTM`
 
 ## Requirements
 
